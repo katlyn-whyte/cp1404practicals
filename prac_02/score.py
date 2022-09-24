@@ -11,16 +11,18 @@
 
 def main():
     score = float(input("enter your score: "))
-
+    print(score_results)
 
 
 def score_results(score):
     if score > 100:
-        print("invalid score")
+        return score_results
     elif score >= 90:
-        print("excellent")
+        return score_results
     elif score >= 50:
-        print("pass")
+        return score_results
     else:
         print("bad")
 
+
+main()
